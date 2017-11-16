@@ -1,0 +1,47 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-wagon-brand" do %>
+
+  <i id="icon" class="fa fa-glass" style="text-shadow: rgb(179, 88, 88) 0px 0px 0px, rgb(187, 92, 92) 1px 1px 0px, rgb(195, 96, 96) 2px 2px 0px, rgb(204, 100, 100) 3px 3px 0px, rgb(212, 104, 104) 4px 4px 0px, rgb(221, 108, 108) 5px 5px 0px, rgb(230, 113, 113) 6px 6px 0px, rgb(238, 117, 117) 7px 7px 0px, rgb(247, 121, 121) 8px 8px 0px; font-size: 34px; color: rgb(255, 255, 255); height: 56px; width: 56px; line-height: 56px; border-radius: 19%; text-align: center; background-color: rgb(255, 125, 125);"></i>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Links -->
+    <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <!-- Avatar with dropdown menu -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <%= image_tag "http://placehold.it/30x30", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li>
+            <%= link_to "#" do %>
+            <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#" do %>
+            <i class="fa fa-home"></i>  <%= t(".profile", default: "Home") %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Some mobile link</a></li>
+        <li><a href="#">Other one</a></li>
+        <li><a href="#">Other one</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
