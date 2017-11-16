@@ -14,8 +14,12 @@ class CocktailsController < ApplicationController
   end
 
   def create
-    @cocktail = Cocktail.create(cocktail_params)
-    redirect_to @cocktail
+    @cocktail = Cocktail.new(cocktail_params)
+    if @cocktail.save
+      redirect_to @cocktail
+    else
+      render 'new'
+    end
   end
 
   def edit
@@ -25,12 +29,14 @@ class CocktailsController < ApplicationController
   end
 
   def destroy
-  end
+   @cocktail = Cocktail.new(cocktail_params)
+   @cocktail.delete
+ end
 
-  private
+ private
 
-  def cocktail_params
-    params.require(:cocktail).permit(:name)
-  end
+ def cocktail_params
+  params.require(:cocktail).permit(:name)
+end
 
 end
