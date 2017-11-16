@@ -22,15 +22,10 @@ class CocktailsController < ApplicationController
     end
   end
 
-  def edit
-  end
-
-  def update
-  end
-
   def destroy
-   @cocktail = Cocktail.new(cocktail_params)
+   @cocktail = Cocktail.find(params["id"])
    @cocktail.delete
+   redirect_to cocktails_path
  end
 
  private

@@ -1,3 +1,5 @@
+
+<div class="cocktails-card">
 <h2><%= @cocktail.name  %></h2>
 <%= link_to "Back", cocktails_path %>
 
@@ -6,4 +8,6 @@
 <% end %>
 
 
-<%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail) %>
+<%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), {class: "link-btn"} %>
+<%= link_to "Delet", cocktail_path, method: :delete %>
+</div>
