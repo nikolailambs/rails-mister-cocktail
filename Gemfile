@@ -7,7 +7,11 @@ end
 
 ruby '2.3.5'
 
+gem "cocoon"
 gem 'faker'
+
+
+gem 'figaro'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
