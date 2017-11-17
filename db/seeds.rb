@@ -28,9 +28,11 @@ p = Ingredient.create(name: "maracuja juice")
 q = Ingredient.create(name: "pear vodka")
 
 
+flav = ["salted", "sweet", "bitter", "soure"]
+
 10.times do
   coc = Cocktail.create!(
-    name: Faker::Color.color_name + " " + Faker::Coffee.blend_name,
+    name: flav.sample + " " + Faker::Color.color_name + " " + Faker::Coffee.blend_name,
     )
   ing = [a, b, c, d, d, e, f, g, h, i, j, k, l, m, n, o, p, q].shuffle
   (2..5).to_a.sample.times do
