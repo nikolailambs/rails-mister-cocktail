@@ -1,0 +1,82 @@
+.link-btn {
+  padding: 10px;
+  border: 1px solid #E3E3E3;
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+.container-cocktail {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-size: cover !important;
+  margin: 40px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.cocktail-back {
+  min-height: 100vh;
+}
+
+.row-mod {
+  padding-top: 20px;
+  padding: 20px;
+  background-color: #E3E3E3;
+  border-radius: 10px;
+  border: 1px solid #A9A9A9;
+  box-shadow: 2px 2px 6px #2B2B2B;
+}
+
+.cocktails-card {
+  h2 {
+    color: #70002B;
+  }
+
+  .delete-btn {
+    font-size: 10px;
+    text-decoration: none;
+    color: #252525;
+    padding: 3px;
+    border: 1px solid #252525;
+    border-radius: 3px;
+  }
+
+  .delete-btn:hover {
+    color: #70002B;
+    border-color: #70002B;
+  }
+
+  .delete-cocktail {
+    padding: 8px;
+    color: #E3E3E3;
+    background-color: #70002B;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .delete-cocktail:hover {
+    background-color: #44051C;
+    box-shadow: 2px 2px 4px #5A5A5A;
+  }
+
+  .back-btn {
+    color: #70002B;
+    text-decoration: none;
+  }
+
+  .back-btn:hover {
+     color: #44051C;
+  }
+}
+
+.show-pic {
+  border: 2px solid #535353;
+  box-shadow: 1px 1px 3px #535353;
+  border-radius: 5px;
+}
+
+.cocktail-index-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

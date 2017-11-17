@@ -7,11 +7,14 @@ end
 
 ruby '2.3.5'
 
+# cocoon shit and seeding db
 gem "cocoon"
 gem 'faker'
 
-
+# uploading images
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'

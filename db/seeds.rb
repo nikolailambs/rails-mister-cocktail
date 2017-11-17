@@ -8,6 +8,8 @@
 
 require 'faker'
 
+include CloudinaryHelper
+
 a = Ingredient.create(name: "lemon")
 b = Ingredient.create(name: "ice")
 c = Ingredient.create(name: "mint leaves")
@@ -28,7 +30,10 @@ p = Ingredient.create(name: "maracuja juice")
 q = Ingredient.create(name: "pear vodka")
 
 
-flav = ["salted", "sweet", "bitter", "soure"]
+flav = ["salty", "sweet", "bitter", "soure", "spicy", "sparkling", "shiny", "dirty", "dark", "light", "hot", "sexy"]
+
+photo_array = ["Blue_kkgx9w", "brown_zropzd", "green_vkpj0h", "light_z2a2hr", "light2_pk0dil", "orange_onwyvv", "orange2_cruyxr", "red_q5h8km", "white_zdy4n4", "yellow_yypkm2"]
+counter = 0
 
 10.times do
   coc = Cocktail.create!(
@@ -42,4 +47,9 @@ flav = ["salted", "sweet", "bitter", "soure"]
       cocktail: coc
       )
   end
+
+  coc.remote_photo_url = cl_image_path(photo_array[counter])
+  coc.save!
+  counter += 1
+
 end

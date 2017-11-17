@@ -2,12 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.cocktails-card {
-
-}
-
 .link-btn {
   padding: 10px;
   border: 1px solid #00165F;
   color: #00165F;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover !important;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.cocktail-back {
+  min-height: 100vh;
+}
+
+.cocktail-card {
+  padding-top: 20px;
 }
