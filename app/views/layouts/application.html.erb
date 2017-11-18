@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<!-- difining random array for background picture -->
+<% @back_pic = ["light-tokio_zgvgsh", "night-btw_rvjtgr", "light-purple_bpzpzc", "light-fire_u86mnq", "light-color_rhbguy", "light-city_g6y5kv", "night-btw_rvjtgr"].sample %>
+
+<body style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path(@back_pic, crop: :fill) %>'); background-size: cover">
   <%= render 'shared/navbar' %>
   <%= yield %>
 </body>
