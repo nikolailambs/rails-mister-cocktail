@@ -2,17 +2,17 @@
 <div class="container">
   <div class="container-cocktail">
     <div class="row row-mod">
-      <div class="col-xs-8 col-xs-offset-2">
-        <div class="cocktails-wrapper text-center">
+      <div class="cocktails-wrapper text-center">
+        <div class="index-txt text-center">
           <h1>Cocktails</h1>
-          <%= link_to "Add a Cocktail", new_cocktail_path %>
-          <% @cocktails.each do |cocktail| %>
-          <div class="cocktail-index-card">
-            <h4><%= cocktail.name %> <%= link_to "open", cocktail_path(cocktail) %></h4>
-            <%= cl_image_tag(cocktail.photo, height: 200, width: 200, crop: :fill, class: "show-pic")%>
-          </div>
-          <% end %>
+          <%= link_to "Add a Cocktail", new_cocktail_path, class: "add-cocktail-btn" %>
         </div>
+        <% @cocktails.each do |cocktail| %>
+        <div class="cocktail-index-card col-md-6">
+          <h4><%= link_to cocktail.name, cocktail_path(cocktail) %></h4>
+          <%= cl_image_tag(cocktail.photo, height: 200, width: 200, crop: :fill, class: "show-pic")%>
+        </div>
+        <% end %>
       </div>
     </div>
   </div>

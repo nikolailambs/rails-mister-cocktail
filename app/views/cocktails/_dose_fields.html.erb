@@ -1,5 +1,5 @@
 <div class="nested-fields">
-  <%= f.input :description, placeholder: "Please type your description" %>
-  <%= f.input :ingredient_id, collection: Ingredient.all %>
+  <%= f.input :description, placeholder: "Please type your description", :input_html => { class: "input-style" } %>
+  <%= f.input :ingredient_id, collection: Ingredient.all, :input_html => { class: "input-style" } %>
   <%= link_to_remove_association "remove dose", f %>
 </div>

@@ -1,8 +1,6 @@
-.link-btn {
-  padding: 10px;
-  border: 1px solid #E3E3E3;
-  color: #E3E3E3;
-  text-decoration: none;
+
+.link-class {
+  margin-top: 40px;
 }
 
 .container-cocktail {
@@ -10,9 +8,9 @@
   justify-content: center;
   text-align: center;
   background-size: cover !important;
-  margin: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 0;
-  overflow: hidden;
 }
 
 .cocktail-back {
@@ -63,11 +61,13 @@
   .back-btn {
     color: #70002B;
     text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
 
   .back-btn:hover {
-     color: #44051C;
-  }
+   color: #44051C;
+ }
 }
 
 .show-pic {
@@ -79,4 +79,68 @@
 .cocktail-index-card {
   margin-top: 50px;
   margin-bottom: 50px;
+
+  a {
+    text-decoration: none;
+  }
 }
+
+a {
+    color: #404040;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  a:hover {
+    color: #F2656A;
+  }
+
+.index-txt {
+  .add-cocktail-btn {
+    text-decoration: none;
+    color: #404040;
+    border: 2px solid #404040;
+    border-radius: 5px;
+    padding: 4px 2px;
+    background-color: #DDDDDD;
+  }
+
+  .add-cocktail-btn:hover {
+    color: #F2656A;
+    border-color: #F2656A;
+  }
+}
+
+.new-cocktail-row {
+  margin-top: 20px;
+  .input-style {
+    border-radius: 8px;
+    background-color: #DDDDDD;
+    border-color: #7C7C7C;
+    color: #F2656A;
+  }
+
+  a {
+    text-decoration: none;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
