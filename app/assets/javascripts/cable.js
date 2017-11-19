@@ -11,3 +11,12 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
+
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var fromTop = $(document).scrollTop();
+    if ( fromTop > $('.navbar').height() ) $('.navbar-wagon').addClass('minimized');
+    else $('.navbar-wagon').removeClass('minimized');
+  });
+});

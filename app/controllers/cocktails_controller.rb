@@ -1,12 +1,19 @@
 class CocktailsController < ApplicationController
 
+  before_action :set_cocktail, only: [:show, :destroy]
+
+  def landing
+  end
+
+  def random
+    @cocktail = Cocktail.new
+  end
 
   def index
     @cocktails = Cocktail.all
   end
 
   def show
-    @cocktail = Cocktail.find(params["id"])
   end
 
   def new
@@ -25,12 +32,15 @@ class CocktailsController < ApplicationController
   end
 
   def destroy
-   @cocktail = Cocktail.find(params["id"])
    @cocktail.destroy
    redirect_to cocktails_path
  end
 
  private
+
+ def set_cocktail
+   @cocktail = Cocktail.find(params["id"])
+ end
 
  def cocktail_params
   params.require(:cocktail).permit(:name, :photo, :photo_cache, doses_attributes: [:description, :ingredient_id])

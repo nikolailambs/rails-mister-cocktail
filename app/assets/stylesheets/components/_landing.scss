@@ -1,0 +1,33 @@
+.lading-wrapper {
+
+  margin-top: 200px;
+}
+
+.landing-txt {
+  color: white;
+  letter-spacing: 5px;
+  text-decoration: none;
+
+  h3 {
+    margin-top: 2px;
+    margin-bottom: 30px;
+  }
+
+  h1, h3, a {
+    font-weight: bold;
+  }
+}
+
+
+.landing-btn {
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 6px 20px;
+}
+
+.landing-btn:hover {
+  color: #F2656A;
+  border-color: #F2656A;
+  text-decoration: none;
+}

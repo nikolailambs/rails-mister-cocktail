@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
-  root to: 'cocktails#index'
+  root to: 'cocktails#landing'
 
   resources :cocktails do
+
+    collection do
+      get 'landing'
+      get 'random'
+    end
+
     resources :doses
   end
 
