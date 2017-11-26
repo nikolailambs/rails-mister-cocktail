@@ -16,6 +16,11 @@
 
   <body style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path(@back_pic, crop: :fill) %>'); background-size: cover">
     <%= render 'shared/navbar' %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= render 'shared/flashes' %>
+
     <%= yield %>
 
   </body>

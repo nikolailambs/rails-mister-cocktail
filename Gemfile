@@ -7,8 +7,10 @@ end
 
 ruby '2.3.5'
 
+gem 'devise'
+
 # cocoon shit and seeding db
-gem "cocoon"
+gem 'cocoon'
 gem 'faker'
 
 # uploading images

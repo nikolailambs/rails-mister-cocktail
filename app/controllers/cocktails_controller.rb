@@ -1,6 +1,7 @@
 class CocktailsController < ApplicationController
 
   before_action :set_cocktail, only: [:show, :destroy]
+  skip_before_action :authenticate_user!, only: [:landing, :random, :index, :show]
 
   def landing
   end

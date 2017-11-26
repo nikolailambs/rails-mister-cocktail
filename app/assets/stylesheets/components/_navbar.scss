@@ -13,6 +13,11 @@
 /*shrinking navbar*/
 .navbar-wagon.minimized {
   height: 30px;
+  opacity: 0.7;
+
+  .cocktail-icon {
+    display: none;
+  }
 }
 
 .navbar-wagon.minimized li a {
